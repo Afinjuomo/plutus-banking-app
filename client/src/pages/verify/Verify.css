@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+.white-text {
+  color: #fff;
+}
+/* .otpInput {
+  width: 70px;
+} */
+.maintext {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.mainimage {
+  width: 60%;
+}
+.imagediv {
+  padding-top: 25%;
+}
+
+.verifycomponent {
+  transform: translateY(30%);
+  padding: 0 0px 0 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.h2 {
+  margin-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+
+  line-height: normal;
+
+  color: rgb(0, 0, 0);
+}
+.detail2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.text-details {
+  font-size: 14px;
+  margin-bottom: 10px;
+  justify-content: start;
+  align-self: start;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.imagediv {
+  background-color: #4770ff;
+}
+.button {
+  padding: 18px 140px;
+  text-decoration: none;
+  background-color: black;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+
+  border-radius: 7px;
+}
+.button2 {
+  padding: 18px 99px;
+  margin-top: 20px;
+  color: #fff;
+  background-color: black;
+}
+.button:hover,
+.button:active {
+  background-color: #4770ff;
+}
+input {
+  width: 40px;
+  height: 55px;
+  margin-right: 15px;
+  margin-bottom: 26px;
+}
+
+input:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.8);
+}
+
+.password {
+  margin-top: 25px;
+  color: #20b2aa;
+}
+.password:hover {
+  color: #4770ff;
+}
+
+input::placeholder {
+  padding-left: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #999;
+}
+.plutus {
+  font-size: 30px;
+  color: #4770ff;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.onlinebanking {
+  color: #4770ff;
+  font-family: "Roboto", sans-serif;
+  margin-top: 12px;
+}
+.topright {
+  position: absolute;
+  top: -25%;
+  right: 0;
+}
+
+/*******************MEDIAQUERIES*************************/
+@media (max-width: 480px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .plutus {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+  }
+  .onlinebanking {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin-top: 12px;
+  }
+  .topright {
+    position: absolute;
+    top: -180%;
+    right: 10px;
+  }
+  .verifycomponent {
+    transform: translateY(40%);
+    padding: 0 0px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .white-text {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  body {
+    background-color: #e7f4f3;
+  }
+  .password {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 680px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .plutus {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+  }
+  .onlinebanking {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin-top: 12px;
+  }
+  .topright {
+    position: fixed;
+    top: -200%;
+    right: 10px;
+  }
+  .verifycomponent {
+    transform: translateY(10%);
+    padding: 0 0px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .white-text {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  body {
+    background-color: #e7f4f3;
+  }
+  .password {
+    margin-bottom: 40px;
+  }
+}
+
+/* otp */
+
+.otpInput input {
+  height: 70px;
+  margin-right: 20px;
+  font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .topright {
+    position: fixed;
+    top: -210%;
+    right: 10px;
+  }
+
+  .topright {
+    position: fixed;
+    top: -200%;
+    right: 10px;
+  }
+  .plutus {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+  }
+  .onlinebanking {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin-top: 12px;
+  }
+
+  .verifycomponent {
+    transform: translateY(10%);
+    padding: 0 0px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .white-text {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  body {
+    background-color: #e7f4f3;
+  }
+  .password {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 1028px) {
+  .verifycomponent {
+    transform: translateY(30%);
+    padding: 0 0px 0 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (max-width: 578px) {
+  .topright {
+    position: fixed;
+    top: -180%;
+    right: 10px;
+  }
+}
+
+@media (max-width: 660px) {
+  .topright {
+    position: fixed;
+    top: -210%;
+    right: 10px;
+  }
+}
+
+@media (max-width: 760px) {
+  .topright {
+    position: fixed;
+    top: -240%;
+    right: 10px;
+  }
+}
